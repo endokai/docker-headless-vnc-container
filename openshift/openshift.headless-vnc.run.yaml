@@ -29,6 +29,14 @@ objects:
       protocol: TCP
       port: 5901
       targetPort: 5901
+    - name: server1-port-tcp
+      protocol: TCP
+      port: 8000
+      targetPort: 9000
+    - name: server2-port-tcp
+      protocol: TCP
+      port: 9000
+      targetPort: 9000
     selector:
       deploymentConfig: ${APPLICATION_NAME}
 - apiVersion: v1
