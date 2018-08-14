@@ -29,7 +29,7 @@ objects:
       protocol: TCP
       port: 5901
       targetPort: 5901
-	- name: server1-port-tcp
+    - name: server1-port-tcp
       protocol: TCP
       port: 8000
       targetPort: 8000
@@ -90,7 +90,7 @@ objects:
           - containerPort: 6901
             name: http
             protocol: TCP
-	      - containerPort: 8000
+          - containerPort: 8000
             name: server1
             protocol: TCP
           - containerPort: 9000
